@@ -25,11 +25,3 @@ uint16_t crc16(const char *text)
     printf("%d\n",crc);
     return crc;
 }
-
-int main()
-{
-    // uint16_t input = 0xAA55;
-    uint16_t result = crc16("0024");
-    printf("%04X\n",result);
-    return 0;
-}
