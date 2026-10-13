@@ -18,7 +18,7 @@ uint16_t crc16(const char *text)
             }
             else 
             {
-                crc = crc < 1;
+                crc = crc << 1;
             }
         }
     }
@@ -29,11 +29,7 @@ uint16_t crc16(const char *text)
 int main()
 {
     // uint16_t input = 0xAA55;
-    crc16("123456789");
-
-
-
-
-    
+    uint16_t result = crc16("0024");
+    printf("%04X\n",result);
     return 0;
 }
